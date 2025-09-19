@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(25, 138, 138, 0.925);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.experience-Bar-Background {
+  position: absolute;
+  width: 50vw; /* vw makes it where it scales with size and uses percentages 50 = 50% of screen*/
+  height: 1vh; /* vh makes it where it scales with size and uses percentages 2 = 2% of screen*/
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 2vw;
+  left: 25vw;
+}
+
+.experience-Bar-Move {
+  position: absolute;
+  width: 0vw; /* vw makes it where it scales with size and uses percentages 50 = 50% of screen*/
+  height: 1vh; /* vh makes it where it scales with size and uses percentages 2 = 2% of screen*/
+  border-radius: 10px;
+  overflow: hidden;
+  bottom: 2vw;
+  left: 25vw;
+  background-color: rgb(53, 20, 145);
+  transition: width 0.3s ease-out;
+}
+
+.CookieButton {
+  background:url(./CookieClick.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 25%;
+  height: 50%;
+  top: 20%;
+  left: 37vw;
+  cursor: pointer;
+  border: none;
+}
+
+.Title {
+  text-align: center;
+  color: rgb(14, 17, 41);
+  position: relative;
+  right: .5%;
+}
+
+.CookieButton:active {
+  transform: scale(95%);
+}
+
+.ClickTracker {
+  position: absolute;
+  text-align: center;
+  bottom: 5vb;
+  left: 42vw;
+}
